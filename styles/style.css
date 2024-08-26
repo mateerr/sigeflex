@@ -1,0 +1,172 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/** Personalizo Aspectos de Bootstrap 
+estas clases creadas por mi, suelen ir a continuacion 
+de las de boostrap, para personalizar a mi gusto.
+*/
+
+
+
+
+/* Creo mi clase "container-login" donde voy a asignar los valores que desee
+al container principal del login (fondo de hojas)
+
+*/
+.container-login{   
+    height: 25rem;
+    width: 10rem;
+    display: flex;
+    background-image: url(../imgs/leafs.jpg);
+    background-attachment: repeat;
+    background-color: green;
+    border: 20px;
+    margin: 100px;
+    border-radius: 20px;
+}
+
+/* Personalizo las columnas que ocupan 6 espacios. */
+
+.col-6{
+    margin-left:55px;
+    padding:10px;
+    
+   width: 5px;
+   max-width: 50px;
+}
+
+
+/* Personalizo el texto de "Inicio" */
+
+.login-text{
+    align-items: center;
+    color:black;
+    justify-content: center;
+    
+}
+
+/* Aquí, modifico el formato, y tipografia que se usará en el formulario (Usuario y contraseña) */
+
+.form{
+    justify-content: center;
+    width: 500px;
+    display: flex;
+    margin:auto;
+    font-family: Mulish;
+    
+
+}
+
+
+/* Especifico, que solo a los input de tipo contraseña, se les aplicara estos detalles */
+
+
+input[type="password"]
+{
+    margin-top:10px;
+    width: 100px;
+
+}
+
+/* Especifico, que solo a los input de tipo submit, es decir el boton de ingreso, se 
+le aplicaran estos detalles */
+
+
+input[type="submit"]
+{
+    margin-left: 30%;
+    margin-top: 10px;
+    background-color: rgb(58, 133, 58);
+
+}
+
+
+/* En esta linea, pido que cuando el cursor este --Sobre-- 
+el boton de enter, le aplique este color especifico.
+*/
+input[type="submit"]:hover
+{
+    
+    background-color: rgb(40, 119, 40);
+
+}
+
+
+/* En estas lineas, modifico las clases que usaré en mi pie de pagina */
+
+.footer-container{
+    
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    padding:0;
+    
+    size: 12px;
+    color:rgba(0, 0, 0, 0.329);
+  
+}
+
+/* Detalles especificos para el texto */
+
+.footer-container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    size: 12px;
+    color:rgba(0, 0, 0, 0.329);
+  
+
+}
+
+/* Detalles que se le asignarán al logo de la escuela. */
+
+.logo-eestn1 img {
+    max-width: auto;
+    height: auto; 
+}
+
+
+/* Estas propiedades se las aplicará al logo del software. Incluyendo fondo de imagen 
+y posicionamiento
+ */
+
+.logo-sigeflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imgs/leafs.jpg) ;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* En cambio, estas propiedades son solo para la imagen. */
+
+.logo-sigeflex img {
+    max-width: auto;
+    height: auto; 
+}
+
+/**
+
+Si la pantalla cumple ciertas medidas, aplicar estos estilos a las siguientes clases
+👇
+
+*/
+
+@media(max-width:991px)
+{
+
+    /* El texto se centrara. */
+    
+    .login-text{
+        color:black;
+        justify-content: center;
+        margin-left:20px ;
+    }
+}

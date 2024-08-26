@@ -1,0 +1,31 @@
+:root {
+    
+    --sigeflex-dark: #01504b41;
+    --sigeflex-dark-lighter: #23a00a5b;
+    --sigeflex-dark-border: #013d3183;
+    --sigeflex-button-hover: #05700e2f;
+    --background: #01504bde;
+    --color: #ffffff;
+    --sigeflex: #ffffff;
+    --navigation-hover: #01504B;
+    --navbar-height: 4rem;
+    
+}
+
+
+
+
+
+.nav-items-collapse{
+    
+    padding: 4px 0.7rem;
+    
+}
+
+.dropdown-menu-pad{
+    padding:50px;
+}
+
+.dropdown-menu-spec{
+    padding: 10px;
+}
